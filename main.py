@@ -6,7 +6,10 @@ import random
 jouer = True
 chiffre = random.randint(0, 100)
 nbessaie = 0
+
+
 def main():
+    global jouer, chiffre, nbessaie
     """
 Fait un jeu de devinnette a l'utilisateur en choississant un nombre aléatoire
     :return:
@@ -17,13 +20,9 @@ Fait un jeu de devinnette a l'utilisateur en choississant un nombre aléatoire
         if essai < chiffre:
             print('Mauvaise réponse, le nombre est plus grand que', essai)
             nbessaie += 1
-
-
         elif essai > chiffre:
             print('Mauvaise réponse, le nombre est plus petit que', essai)
             nbessaie += 1
-
-
         elif essai == chiffre:
             print('Bravo! Bonne réponse/Vous avez réussi en : ', nbessaie, 'essaie')
             restart = input('Voulez-vous faire une autre partie (o,n)?')
@@ -35,5 +34,6 @@ Fait un jeu de devinnette a l'utilisateur en choississant un nombre aléatoire
             elif restart == 'o':
                 chiffre = random.randint(0, 10)
                 nbessaie = 0
+
 
 main()
