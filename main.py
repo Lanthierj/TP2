@@ -8,8 +8,7 @@ chiffre = random.randint(0, 100)
 nbessaie = 0
 def main():
     """
-Fait un jeu de devinnette
- l'utilisateur en choississant un nombre aléatoire
+Fait un jeu de devinnette a l'utilisateur en choississant un nombre aléatoire
     :return:
     """
     while jouer:
